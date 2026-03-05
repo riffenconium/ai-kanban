@@ -34,5 +34,17 @@ module.exports = [
     },
     tags: ["AI", "Profiling", "NLP"],
     color: "#00695C"
+  },
+  {
+    id: "test-kanban-tracking",
+    name: "Test Kanban Tracking",
+    localFolder: "test-kanban-tracking",
+    github: {
+      owner: "riffenconium",
+      repo: "test-kanban-tracking",
+      tokenEnv: "GITHUB_TOKEN_RIFFENCONIUM"
+    },
+    tags: ["Test", "Dummy"],
+    color: "#607D8B"
   }
 ];
