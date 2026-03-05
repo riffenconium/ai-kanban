@@ -200,7 +200,7 @@ app.get('/api/health', (req, res) => {
 
 // SPA fallback — serve index.html for non-API routes
 if (fs.existsSync(frontendPath)) {
-  app.get('*', (req, res) => {
+  app.get('/{*path}', (req, res) => {
     res.sendFile(path.join(frontendPath, 'index.html'));
   });
 }
